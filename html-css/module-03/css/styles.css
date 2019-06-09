@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+
+.container {
+    width: 903px;
+    margin: 0 auto;
+}
+
+.text {
+    color: #626262;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    line-height: 24px;
+}
+
+
+/* main-header */
+.main-header {
+    margin-top: 72px;
+    margin-bottom: 98px;
+    text-align: center;
+}
+
+
+
+/* main-menu */
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.main-menu-item {
+    display: inline-block;
+    margin-right: 110px;
+}
+
+.main-menu-item:nth-last-child(-n + 1) {
+    margin-right: 0px;
+}
+
+.main-menu-link {
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+.main-menu-link {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-menu-link:hover, 
+.main-menu-link:focus {
+    color: #03a9f4;
+}
+
+/*main-content*/
+.content {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.title {
+    display: inline-block;
+    width: 421px;
+    margin-right: 61px;
+    margin-bottom: 133px;
+    padding-right: 7px;
+}
+
+.title:nth-child(2n) {
+    margin-right: 0;
+}
+
+.title:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+}
+
+.title h2 {
+    margin: 0 0 30px 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.title p {
+    font-size: 14px;
+}
+
+
+.section {
+    color: #b4ad9e;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 30px 0 26px 0;
+}
+
+.paragraph {
+    margin: 0;
+}
+
+.button {
+    margin: 58px 357px 70px 357px;
+    border: 0;
+    min-width: 165px;
+    min-height: 61px;
+    background-color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    border-width: 1px;
+    border-color: rgb(98, 98, 98);
+    border-style: solid;
+    cursor: pointer;
+  }
+  
+
+
+/*Visually-hidden*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
