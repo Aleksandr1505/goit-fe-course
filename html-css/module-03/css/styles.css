@@ -15,7 +15,7 @@ img {
  }
 
 .container {
-    width: 903px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -30,8 +30,8 @@ img {
 
 /* main-header */
 .main-header {
-    margin-top: 72px;
-    margin-bottom: 98px;
+    padding-top: 72px;
+    padding-bottom: 98px;
     text-align: center;
 }
 
@@ -39,6 +39,7 @@ img {
 
 /* main-menu */
 .main-menu {
+    font-size: 0;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -56,10 +57,10 @@ img {
 
 .main-menu-link {
     display: block;
-    width: 50px;
     text-align: center;
 }
 .main-menu-link {
+    font-size: 14px;
     color: #626262;
     text-transform: uppercase;
     text-decoration: none;
@@ -76,14 +77,14 @@ img {
     padding: 0;
     list-style: none;
     font-size: 0;
+    margin-bottom: 58px;
 }
 
 .title {
     display: inline-block;
-    width: 421px;
-    margin-right: 61px;
+    width: 420px;
+    margin-right: 60px;
     margin-bottom: 133px;
-    padding-right: 7px;
 }
 
 .title:nth-child(2n) {
@@ -105,13 +106,17 @@ img {
     font-size: 14px;
 }
 
+.foto {
+    margin-bottom: 30px;
+}
 
 .section {
     color: #b4ad9e;
     font-weight: 300;
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
-    margin: 30px 0 26px 0;
+    margin: 0;
+    margin-bottom: 26px;
 }
 
 .paragraph {
@@ -119,7 +124,7 @@ img {
 }
 
 .button {
-    margin: 58px 357px 70px 357px;
+    margin: 0 357px 0 357px;
     border: 0;
     min-width: 165px;
     min-height: 61px;
@@ -131,8 +136,9 @@ img {
     border-style: solid;
     cursor: pointer;
   }
-  
-
+  section {
+    padding-bottom: 70px;
+  }
 
 /*Visually-hidden*/
 .visually-hidden:not(:focus):not(:active),
