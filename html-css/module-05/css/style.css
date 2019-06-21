@@ -30,6 +30,7 @@ img {
 
 .page-header {
     margin: 0 auto;
+    padding-top: 30px;
 }
 
 .site-navigation {
@@ -54,10 +55,8 @@ img {
     display: block;
 }
 .site-logo {
-    padding-top: 30px;
     display: block;
-    width: 78px;
-    height: 21px;    
+    float: left;   
 }
 
 .site-navigation-link {
@@ -222,7 +221,7 @@ img {
 }
 
 
-div p {
+.inside p {
     float: left;
     margin: 0;
 }
