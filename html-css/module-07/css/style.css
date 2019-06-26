@@ -95,8 +95,8 @@ img {
 
 /* HEADER */
 .header {
-    margin-top: 44px;
-    margin-bottom: 120px;
+    padding-top: 44px;
+    padding-bottom: 120px;
 }
 .main-nav {
     display: flex;
