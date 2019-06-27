@@ -319,18 +319,18 @@ img {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 960px) {
 
   .header {
     padding-top: 40px;
   }
 
   .section {
-    width: 1100px;
+    width: 960px;
   }
   .container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1000px;
     padding: 0 14px;
     margin: 0 auto;
   }
@@ -342,6 +342,18 @@ img {
 .text p {
   font-size: 22px;
   width: 410px;
+}
+
+.people-list {
+  padding: 0;
+}
+
+.people-item {
+  width: 210px;
+}
+
+.description {
+  letter-spacing: .5px;
 }
 
 }
