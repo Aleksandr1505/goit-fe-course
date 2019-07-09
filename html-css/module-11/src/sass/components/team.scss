@@ -77,22 +77,22 @@
     left bottom,
     left top,
     from($gradient-start),
-    to(rgba(243, 129, 129, 0.9))
+    to($gradient-end)
   );
   background: -webkit-linear-gradient(
     bottom,
     $gradient-start 0%,
-    rgba(243, 129, 129, 0.9) 100%
+    $gradient-end 100%
   );
   background: -o-linear-gradient(
     bottom,
     $gradient-start 0%,
-    rgba(243, 129, 129, 0.9) 100%
+    $gradient-end 100%
   );
   background: linear-gradient(
     to top,
     $gradient-start 0%,
-    rgba(243, 129, 129, 0.9) 100%
+    $gradient-end 100%
   );
   opacity: 0;
   z-index: -1;
