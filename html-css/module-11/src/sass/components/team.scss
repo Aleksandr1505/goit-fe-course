@@ -1,0 +1,172 @@
+.second-section {
+  margin: 0;
+  padding-bottom: 78px;
+
+  &_start {
+    @extend %main-set;
+  }
+
+  &_title {
+    @extend %second-set;
+    margin-bottom: 42px;
+
+    &::after {
+      @extend %after-set;
+    }
+  }
+
+  &_provision {
+    font-size: 15px;
+    margin: auto;
+    margin-bottom: 90px;
+    width: 960px;
+    color: $third-color;
+    font-family: $second-font;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+  }
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.team_team-item--name {
+  font-size: 14px;
+  color: $second-color;
+  font-family: $main-font;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.team_team-item--occupation {
+  font-size: 15px;
+  line-height: 24px;
+  color: $third-color;
+  font-family: $second-font;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.foto_fotography {
+  margin-bottom: 28px;
+}
+
+.second-section_team--team-list {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  -webkit-box-shadow: 8px 8px 0 0 $shadow-color;
+  box-shadow: 8px 8px 0 0 $shadow-color;
+  width: 380px;
+  height: 470px;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from($gradient-start),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background: -webkit-linear-gradient(
+    bottom,
+    $gradient-start 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  background: -o-linear-gradient(
+    bottom,
+    $gradient-start 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  background: linear-gradient(
+    to top,
+    $gradient-start 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  opacity: 0;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  width: 228px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.buttons_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 0;
+  width: 56px;
+  height: 56px;
+  background-color: $second-bright;
+}
+
+.buttons_socials--links {
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: $bright-color;
+  -webkit-transition: fill 200ms linear;
+  -o-transition: fill 200ms linear;
+  transition: fill 200ms linear;
+}
+
+.buttons_socials {
+  &:hover .buttons_socials--links,
+  &:focus .buttons_socials--links {
+    fill: $main-color;
+  }
+}
+
+.buttons_socials {
+  &:hover,
+  &:focus {
+    background-color: $bright-color;
+    -webkit-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    transition: 200ms linear;
+  }
+}
+
+.foto {
+  &:hover .overlay {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: translate(-8px, -8px);
+    -ms-transform: translate(-8px, -8px);
+    transform: translate(-8px, -8px);
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+}

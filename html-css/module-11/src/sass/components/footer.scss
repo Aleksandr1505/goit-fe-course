@@ -1,0 +1,56 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 62px;
+  font-size: 14px;
+  color: $second-color;
+  font-family: $main-font;
+  font-weight: 400;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 1px solid $footer-color-one;
+}
+
+.footer_attach--sign {
+  &::before {
+    content: '\00A9';
+  }
+}
+
+.footer_attach--link {
+  text-decoration: none;
+  color: $bright-color;
+}
+
+.footer_information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.information_field {
+  color: $footer-color-two;
+  font-family: $second-font;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 8px;
+}
+
+.button {
+  border: 0;
+  min-width: 150px;
+  min-height: 40px;
+  background-color: $shadow-color;
+  color: $main-color;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}

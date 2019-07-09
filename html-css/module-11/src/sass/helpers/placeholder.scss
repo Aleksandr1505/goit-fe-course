@@ -1,0 +1,28 @@
+%main-set {
+  padding-bottom: 22px;
+  text-align: center;
+  font-size: 24px;
+  color: $second-color;
+  font-family: $third-font;
+  font-weight: 400;
+}
+
+%second-set {
+  margin-bottom: 62px;
+  font-size: 30px;
+  color: $second-color;
+  font-family: $main-font;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+%after-set {
+  display: block;
+  margin: 0 auto;
+  margin-top: 42px;
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: $bright-color;
+}
